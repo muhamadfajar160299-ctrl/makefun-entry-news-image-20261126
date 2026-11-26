@@ -1,8 +1,8 @@
 # The World in One Day — 26 November 2026
 
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![make.fun](https://img.shields.io/badge/make.fun-news--image--20261126-navy)](https://make.fun/c/news-image-20261126/)
+[![make.fun · news-image-20261126](https://make.fun/badge/news-image-20261126.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
+[![rank](https://make.fun/badge/news-image-20261126/muhamadfajar160299-ctrl/makefun-entry-news-image-20261126/rank.svg)](https://make.fun/bounty/news-image-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
+[![reward](https://make.fun/badge/news-image-20261126/muhamadfajar160299-ctrl/makefun-entry-news-image-20261126/reward.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 
 One image summing up the world's news of **Thursday 26 November 2026**,
 for the [make.fun news-image-20261126 competition](https://make.fun/c/news-image-20261126/)
