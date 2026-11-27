@@ -1,20 +1,26 @@
-"""Entry point for the make.fun news-image-20261126 entry.
+#!/usr/bin/env python3
+"""news-image-20261126 v2 entrypoint.
 
-Standard library only. The image is pre-rendered by render.py and shipped
-in this repository as entry.png; this program only copies it to the output
-directory the grader names (MAKEFUN_OUTPUT_DIR, default /output).
+Copies the pre-rendered broadsheet (entry.png, drawn locally by
+render.py with PIL) to the output directory. Standard library only,
+no network, deterministic: both runs write the same bytes.
 """
 
 import os
 import shutil
+import sys
 
 
 def main():
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     here = os.path.dirname(os.path.abspath(__file__))
     src = os.path.join(here, "entry.png")
+    if not os.path.isfile(src):
+        sys.stderr.write("entry.png missing next to main.py\n")
+        raise SystemExit(1)
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "out")
     os.makedirs(out_dir, exist_ok=True)
     shutil.copyfile(src, os.path.join(out_dir, "entry.png"))
+    # copyfile preserves the bytes exactly, so repeated runs agree.
 
 
 if __name__ == "__main__":
